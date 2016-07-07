@@ -14,7 +14,9 @@ public class DiamondWithName {
     }
     private void drawDiamond(int n){
         constructUpperHalf(n);
-        System.out.println("Siddharth");
+        if(n>5)
+        giveSpace( (int)((2*n-1)-9)/2 );
+        System.out.print("Siddharth\n");
         constructLowerHalf(n);
 
     }
