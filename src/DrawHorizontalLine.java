@@ -6,7 +6,7 @@ import java.io.*;
  */
 public class DrawHorizontalLine {
     public static void main(String args[])throws IOException{
-        System.out.println("Enter the value of n");
+        System.out.println("Enter the number of asterisks");
         String input = new BufferedReader(new InputStreamReader(System.in)).readLine();
         int n = Integer.parseInt(input);
         new DrawHorizontalLine().drawLine(n);

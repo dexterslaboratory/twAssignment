@@ -7,11 +7,14 @@ import java.io.InputStreamReader;
  */
 public class DrawVerticalLine {
     public static void main(String args[])throws IOException{
+        System.out.println("Enter the number of lines");
         String input = new BufferedReader(new InputStreamReader(System.in)).readLine();
         int n = Integer.parseInt(input);
-        drawVerticalLine(n);
+        new DrawVerticalLine().drawVerticalLine(n);
     }
-    private void drawVerticalLine(int ){
-
+    private void drawVerticalLine(int n){
+        for(int i=0;i<n;i++){
+            System.out.println('*');
+        }
     }
 }
