@@ -10,9 +10,9 @@ public class PrimeFactor {
     public static void main(String args[])throws IOException{
         String input = new BufferedReader(new InputStreamReader(System.in)).readLine();
         int n = Integer.parseInt(input);
-        new PrimeFactor().printPrimeFactors(n);
+        new PrimeFactor().generate(n);
     }
-    private void printPrimeFactors(int n){
+    private void generate(int n){
         ArrayList<Integer> factors = new ArrayList<>();
         for(int i=2;i<=Math.sqrt(n);i++){
             if(n%i==0 && !previousFactors(i,factors)){
